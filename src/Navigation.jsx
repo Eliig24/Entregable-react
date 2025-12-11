@@ -2,9 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useTheme } from './Context/useTheme';
 
-
-
-
 const Navigation = () => {
     const { theme, toggleTheme } = useTheme();
 
