@@ -25,9 +25,15 @@ const Navigation = () => {
                     </NavLink>
             </li>
             <li>
-                <NavLink to="/suscripcion" className={({ isActive }) => isActive ? "text-white font-bold" : "text-red-600"}
+                <NavLink to="/iniciarsesion" className={({ isActive }) => isActive ? "text-white font-bold" : "text-red-600"}
                 >
-                    Suscríbete
+                    Inicia Sesion
+                    </NavLink>
+            </li>
+            <li>
+                <NavLink to="/publicar" className={({ isActive }) => isActive ? "text-white font-bold" : "text-red-600"}
+                >
+                    Publicar
                     </NavLink>
             </li>
         </ul>

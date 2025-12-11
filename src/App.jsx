@@ -2,7 +2,9 @@ import { Route, Routes } from "react-router-dom"
 import styles from "./app.module.css"
 import Iniciopage from "./Iniciopage"
 import JellyPage from "./JellyPage"
-import SuscripcionPage from "./SuscripcionPage"
+import IniciarsesionPage from "./IniciarsesionPage"
+import InscripcionPage from "./InscripcionPage"
+import PostsPage from "./PostsPages/PostsPage"
 import Navbar from "./Navigation"
 import { useTheme } from "./Context/useTheme"
 
@@ -17,7 +19,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Iniciopage />} />
         <Route path="/wiki" element={<JellyPage />} />
-        <Route path="/suscripcion" element={<SuscripcionPage />} />
+        <Route path="/iniciarsesion" element={<IniciarsesionPage />} />
+        <Route path="/inscripcion" element={<InscripcionPage />} />
+        <Route path="/publicar" element={<PostsPage />} />
       </Routes>
     </div>
     </div>

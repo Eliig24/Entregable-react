@@ -9,8 +9,9 @@ const JellyPage = () => {
   useEffect(() => {
     const fetchJellys = async () => {
       try {
-        const response = await axios.get("https://jellybellywikiapi.onrender.com/api/Beans")
+        const response = await axios.get("https://jellybellywikiapi.onrender.com/api/Beans?pagesize=200")
         console.log(typeof response.data)
+        console.log("informacion de la API",response.data)
         setJellys(response.data.items)
       } catch (error) {
         console.error("Error al cargar Jellys:", error)
